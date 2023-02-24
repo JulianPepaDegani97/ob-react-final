@@ -53,7 +53,7 @@ module.exports = {
             },
             // Reglas archivos CSS, SASS y SCSS
             {
-                testr: /(\.css|\.scss)$/,
+                test: /(\.css|\.scss)$/,
                 use: [
                     { loader: MiniCssExtractPlugin.loader },
                     { loader: 'css-loader' },
