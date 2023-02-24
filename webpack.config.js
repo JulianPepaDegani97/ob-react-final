@@ -35,10 +35,10 @@ module.exports = {
                 enforce: 'pre',
                 test: /(\.js|\.jsx)$/,
                 exclude: /node_modules/,
-                /*use: [
-                    'eslint-loader',
+                use: [
+                    //'eslint-loader',
                     'source-map-loader',
-                ]*/
+                ]
             },
             //Regles para archivos JS y JSX
             // Reglas de Babel ES y JSX
