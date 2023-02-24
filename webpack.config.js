@@ -37,7 +37,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     //'eslint-loader',
-                    'source-map-loader',
+                    //'source-map-loader',
                 ]
             },
             //Regles para archivos JS y JSX
