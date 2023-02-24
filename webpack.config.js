@@ -32,12 +32,12 @@ module.exports = {
             // Reglas para archivos de JS y JSX
             // Tienen que pasar el LINTING para poder pasar
             {
-                enforce: 'pre',
+                enforce: true,
                 test: /(\.js|\.jsx)$/,
                 exclude: /node_modules/,
                 use: [
-                    //'eslint-loader',
-                    //'source-map-loader',
+                    'eslint-loader',
+                    'source-map-loader',
                 ]
             },
             //Regles para archivos JS y JSX
