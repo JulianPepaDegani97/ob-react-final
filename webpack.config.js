@@ -11,6 +11,9 @@ const port = process.env.PORT || 3000;
 
 // Exportar configuraciones de Webpack
 module.exports = {
+    stats: {
+        children: true,
+    },
     entry: './src/index.jsx',
     output: {
         path: path.join(__dirname, '/dist'),
