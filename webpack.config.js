@@ -77,7 +77,7 @@ module.exports = {
     },
     plugins: [
         // Template HTML
-        new ESLintPlugin(),
+        //new ESLintPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html'
         }),
