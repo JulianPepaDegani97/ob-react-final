@@ -36,6 +36,7 @@ module.exports = {
                 test: /(\.js|\.jsx)$/,
                 exclude: /node_modules/,
                 use: [
+                    'eslint-loader',
                     'source-map-loader',
                 ]
             },
@@ -77,7 +78,7 @@ module.exports = {
     },
     plugins: [
         // Template HTML
-        //new ESLintPlugin(),
+        new ESLintPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html'
         }),
