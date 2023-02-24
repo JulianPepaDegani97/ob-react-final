@@ -36,10 +36,10 @@ module.exports = {
                 test: /(\.js|\.jsx)$/,
                 exclude: /node_modules/,
                 loader: 'eslint-loader',
-                use: [
+                /*use: [
                     'eslint-loader',
                     'source-map-loader',
-                ]
+                ]*/
             },
             //Regles para archivos JS y JSX
             // Reglas de Babel ES y JSX
