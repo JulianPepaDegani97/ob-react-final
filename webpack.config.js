@@ -5,6 +5,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Para el template del HTML que va a usar Webpack
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // Para reducir los CSS
 const { SourceMapDevToolPlugin } = require('webpack'); // Para conocer el SourceMap de nuestro proyecto
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 // Configuración de puerto
 const port = process.env.PORT || 3000;
@@ -76,6 +77,7 @@ module.exports = {
     },
     plugins: [
         // Template HTML
+        new ESLintPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html'
         }),
