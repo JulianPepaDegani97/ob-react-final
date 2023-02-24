@@ -59,9 +59,10 @@ module.exports = {
             {
                 test: /(\.css|\.scss)$/,
                 use: [
-                    { loader: MiniCssExtractPlugin.loader },
-                    { loader: 'css-loader' },
-                    { loader: 'sass-loader' },
+                     MiniCssExtractPlugin.loader ,
+                     'css-loader' ,
+                     'sass-loader' ,
+                     "style-loader",
                 ],
             },
             // Reglas para los archivos de imágenes
