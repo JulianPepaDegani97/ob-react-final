@@ -36,8 +36,8 @@ module.exports = {
                 test: /(\.js|\.jsx)$/,
                 exclude: /node_modules/,
                 use: [
-                    {loader: 'eslint-loader'},
-                    {loader: 'source-map-loader'},
+                    'eslint-loader',
+                    'source-map-loader',
                 ]
             },
             //Regles para archivos JS y JSX
@@ -94,8 +94,7 @@ module.exports = {
         modules: [
             'node-modules'
         ],
-        alias: {
-            'react-redux': path.join(__dirname, '/node_modules/react-redux/dist/react-redux.min'),
-          },
+       ////   'react-redux': path.join(__dirname, '/node_modules/react-redux/dist/react-redux.min'),
+          //},
     }
 }
