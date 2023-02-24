@@ -1,6 +1,6 @@
-// Imports de React
-import React from 'react';
-import ReactDOM from 'react-dom';
+
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 // Imports de Redux
 // import { Provider } from 'react-redux';
